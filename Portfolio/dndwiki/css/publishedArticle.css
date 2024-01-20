@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #444444;
+}
+
+
+#articleContainer{
+    position:relative;
+    float: left;
+    left: 5%;
+    top: 0%;
+    width: 40%;
+    background-color:aquamarine;
+    height: 85%;
+}
+
+#titleBlock{
+    width: 100%;
+    height: 10%;
+    background-color: #9C5F5F;
+}
+
+#articleBody{
+    width: 100%;
+    height: 90%;
+    background-color: #1E1E1E;
+}
+
+#playerNotes{
+    position: relative;
+    float: left;
+    left: 10%;
+    top: 8%;
+    background-color: #1E1E1E;
+    width: 15%;
+    height: 40%;
+}
+
+@media screen and (max-width:1000px) {
+    #articleContainer, #playerNotes {width:75%;}
+}
+
+

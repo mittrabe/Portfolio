@@ -1,0 +1,222 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #444444;
+}
+
+/*#banner{
+  padding:20px;
+  position: absolute;
+  top: 0%;
+  width:100%;
+  background-color: #383838;
+  border-bottom: 1px solid #C6C6C6;
+} */
+
+
+#headerBlock {
+  background-color: none;
+  width: 75%;
+  position: absolute;
+  transform: translate(-50%, -50%); /*I don't know what this does */
+  left: 40%;
+  top: 0%;
+  border-radius: 5px;
+}
+
+.headerlabel, .headerText, .miscButtons {
+  display:block;
+}
+#fakeDiv, #miscHeaderDiv{
+  display:block;
+}
+.headerLabel{
+  color: rgb(240, 240, 240);
+  font-size:18px;
+}
+
+.headerText{
+  margin-top:5px;
+  background-color: #252424;
+  color: rgb(201, 201, 201);
+  font-size: 18px;
+}
+#articleTitleText {
+  width: 100%;
+  height:3vh;
+}
+#titleDiv {
+  width: 50%;
+}
+#typeDiv{
+  width: 20%;
+}
+#miscHeaderDiv{
+  width: 27%;
+}
+#articleTypeDropdown{
+  width: 100%;
+  padding:2px;
+  width: 75%;
+}
+
+.miscButtons{
+  padding:5px;
+  background-color: #252424;
+}
+
+.buttonImage{
+  width:20px;
+  height: 20px;
+  object-fit:contain;
+}
+
+@media screen and (max-width:800px) {
+  #titleDiv, #typeDiv, #miscHeaderDiv {width:100%;}
+}
+
+/*container is the entire area including the textbox & toolbar */
+.container {
+  background-color: #383838;
+  /*width: 90vmin; */
+  width: 75%;
+  padding: 10px 10px; 
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 40%;
+  top: 40%;
+  border-radius: 5px;
+  box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+}
+
+
+
+/*the toolbar */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px; /* Spacing between each button on the toolbar */
+  background-color: #383838;
+}
+
+/* toolbar buttons */
+button {
+  height: 28px;
+  width: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  border: none;
+  background-color: #383838;
+  outline: none;
+  color: #BDBDBD;
+}
+button:hover{
+  background-color:#5E5E5E;
+}
+
+/*settings for the dropdown options (headings, font, & size) */
+select {
+  padding: 7px;
+  border: 1px solid #020929;
+  border-radius: 3px;
+}
+.toolbar label,
+.toolbar select {
+  font-family: "Poppins", sans-serif;
+  color: #BDBDBD;
+  background-color: #383838;
+  border: none;
+}
+
+/*space between the color icon and color text? */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 5px;
+  margin-right:5px;
+}
+
+/*the actual colored dot for the font/highlight color tools */
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 20px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+/*idk what this is */
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 5px; /*how round the color tool squares are */
+  /* box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929; */
+}
+ /* this is a firefox specific thing...maybe? */
+input[type="color"]::-moz-color-swatch { 
+  border-radius: 5px;
+}
+
+
+/*the actual textbox */
+.textarea {
+  margin-top: 1px; /*distance between textbox and toolbar */
+  padding: 20px;
+  height: 50vh;
+  background-color: #252424;
+  color: rgb(201, 201, 201);
+  overflow-y: scroll;
+}
+.textarea:focus{
+  outline: none !important;
+  border: none;
+}
+
+.active {
+  background-color: #5E5E5E;
+}
+
+#dmTextbox{
+  /*background-color: #383838; */
+  /*width: 90vmin; */
+  width: 75%;
+  padding: 10px; 
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 40%;
+  top: 80%;
+  border-radius: 5px;
+  box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+}
+
+.collapsible {
+  background-color: #5E5E5E;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin: 10px;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  font-family: "Georgia";
+}
+
+.collapsible:hover {
+  background-color: #838383;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background: #383838;
+}
