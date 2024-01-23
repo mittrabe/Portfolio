@@ -1,0 +1,1 @@
+self.bind('<Escape>', lambda e: close_win(e))
