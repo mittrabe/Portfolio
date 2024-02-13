@@ -1,0 +1,133 @@
+body{
+    background-image: url("contactFormBackground.jpg");
+    background-size: auto;
+}
+
+form{
+    background-color: white;
+    /*adjusting size and position of form */
+    border-radius: 25px; /*gives the form rounded corners */
+    height: 675px;
+    width: 600px;
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#header h1{
+    text-align: center;
+    color: rgb(221, 221, 219);
+    text-shadow: 1px 1px black;
+    font-size: 3em;
+    margin: 3px;
+} 
+
+
+/*~~~~~~~~~~~~~~~~~~~
+    FORM ELEMENTS
+~~~~~~~~~~~~~~~~~~~~*/
+
+p.formHeader{
+    font-size:1.15em;
+    margin: 0;
+}
+
+input[type="text"]{
+    width: 45%;
+    height:40px;
+    margin: 5px 5px 25px 5px;
+    display: inline-block;
+    border-radius: 15px;
+    border-color:rgba(180, 154, 9, 0.719); 
+    border-width: 3px; 
+
+    
+}
+
+
+#timeZone{
+    width: 45%;
+    height: 40px;
+    margin: 5px 5px 25px 5px;
+    display: inline-block;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgba(180, 154, 9, 0.719);
+    border-width: 3px;
+}
+
+input[type="textarea"]{
+    width: 93%;
+    height:120px;
+    margin: 5px 0px 25px 0px;
+    padding-top: 0;
+    padding-left: 0;
+    display: inline-block;
+    border-radius: 15px;
+    border-color:rgba(180, 154, 9, 0.719);
+    border-width: 3px; 
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+    margin: 3px;
+}
+
+
+label.contactPreference{
+    display: inline-block;
+}
+
+
+input[type="submit"]{
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    border-color:rgba(180, 154, 9, 0.719);
+    border-width: 3px; 
+    margin:20px 0px 0px 0px;
+    background-color: white;
+    opacity: 0.85;
+    font-size: 24px;
+    margin:0 auto;
+    display:block;
+}
+
+
+
+.rainbow-text:hover{
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    animation: rainbow 8s ease infinite;
+}
+/* code from: https://w3bits.com/rainbow-text/  */
+.rainbow-text {
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    border-color:rgba(180, 154, 9, 0.719);
+    border-width: 3px; 
+    margin:20px 0px 0px 0px;
+    opacity: 0.85;
+    font-size: 24px;
+    margin:0 auto;
+    display:block;
+  }
+
+  
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
+
+.error{
+    border:2px solid rgb(255, 0, 119) !important;
+}
+
+
+
