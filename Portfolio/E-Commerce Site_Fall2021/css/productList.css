@@ -1,0 +1,15 @@
+#productListDisplay{
+    display:inline-block;
+    margin: 8vw 0px 5vw 6vw;
+    width:26vw;
+    height:30vw;
+}
+#beanListImg{
+    display:inline-block;
+    width:35vw;
+    height: 30vw;
+}
+#productDetailsButton{
+    height: fit-content;
+    width: fit-content;
+}

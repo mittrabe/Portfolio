@@ -1,0 +1,72 @@
+
+/*================================
+            New User Panel
+================================*/
+#quickNewAccount{
+    font-size: 20px;
+    width:fit-content;
+    height: fit-content;
+    border: solid 2px black;
+    margin: 50px 60px 5px 100px;
+    background-color: #E5E5E5;
+}
+#quickNewAccount h1{
+    font-size: 30px;
+    display: inline-block;
+    width: fit-content;
+    padding: 4px 10px 4px 10px;
+    margin: 10px 10px 10px 60px;
+    background-color: #848484;
+}
+#quickNewAccount label{
+    width: 10%;
+    margin: .5% 0 0 2%;
+}
+#quickNewAccount input{
+    display: inline-block;
+    width: 50%;
+    height: 25px;
+    margin: .5% 0 0 1.5%;
+}
+#quickNewAccount input[type="button"]{
+    margin: 10px 10px 10px 63px;
+    height: 40px;
+    width: 60px;
+}
+
+
+/*================================
+            Ticket Panel
+================================*/
+
+#ticketPanel{
+    font-size: 20px;
+    width:fit-content;
+    height: fit-content;
+    border: solid 2px black;
+    margin: 5px 60px 5px 100px;
+    background-color: #E5E5E5;
+}
+#ticketPanel h1{
+    font-size: 30px;
+    display: inline-block;
+    width: fit-content;
+    padding: 4px 10px 4px 10px;
+    margin: 10px 10px 10px 60px;
+    background-color: #848484;
+}
+#ticketPanel input[type="button"]{
+    margin: 10px 10px 10px 63px;
+    height: 40px;
+    width: 100px;
+}
+.ticketPanelImg{
+    display:inline-block;
+    margin: 2vw 3vw 2vw 3vw;
+    border-radius: .5vw;
+
+}
+#ticketPanelImg{
+    width: 80vw;
+    height:15vw;
+}

@@ -1,0 +1,279 @@
+@charset "UTF-8"; /* used for the star rating */
+
+#pageBody{
+    /*text-align: center; */
+}
+
+.pageBlock{
+    display: block;
+    min-height:600px;
+    width: auto;
+    white-space: nowrap;
+    padding: 25px;
+}
+
+.inlineBlock{
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    white-space: nowrap;
+}
+
+.pageBlockHeader{
+    display: block;
+    font-size: 2em;
+    background-color: #393633;
+    color: #fa993ffb;
+    width: 15em;
+}
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+           Product Block
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
+/*================================
+      Product Content Section
+ (Picture, name, and description)
+================================*/
+
+#productContent{
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    padding: 25px;
+    white-space: nowrap;
+}
+
+#productImg{
+    display: inline-block;
+    background-color: white;
+    width:30em;
+    height: 30em;
+}
+
+#productDescription{
+    display:inline-block;
+    vertical-align: top;
+    
+}
+#listDescription{
+    font-size: 1.3em;
+    white-space:nowrap;
+    
+}
+
+/*================================
+      Product Block Section
+ (price, beans, and add to cart)
+================================*/
+
+#productMisc{
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: fit-content;
+    max-height: 600px;
+    min-height: 600px;
+    vertical-align: top;
+    background-color: #848484;
+}
+
+#productName{
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#chosenBeans{
+    border: 3px solid#393633;
+    max-height: 200px;
+    text-align: left;
+    height: auto;
+    width: auto;
+    overflow-y: auto;
+}
+
+#productPrice{
+    display: block;
+    font-size: 2.2em;
+    padding-left: -50px;
+    background-color: #393633;
+    color: #fa993ffb;
+}
+
+#selectedBeansHeader{
+    display: block;
+    font-size: 1.5em;
+    background-color: #393633;
+    color: #fa993ffb;
+}
+#selectedBeans{
+    font-size: 1.1em;
+    margin-top: -5px;
+}
+
+#beanSelectionButton{
+    display: block;
+    bottom: 0;
+    height: 50px;
+    width:400px;
+    background-color: #393633;
+    color: #fa993ffb;
+    text-decoration: none;
+    font-size: 1.5em;
+
+    margin-top: 10%;
+    padding-top: 15px;
+}
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          Compare Block 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+#compareBlock{
+display: inline-block;
+}
+
+#productComparison{
+    height: fit-content;
+    max-width: 80em;
+    display: grid;
+    text-align:left;
+    
+    background-color: #C4C4C4;
+    overflow-x: scroll;
+    border: 1px solid rgb(66, 66, 66);
+    white-space: nowrap;
+
+}
+
+.gridItem{
+    background-color: white;
+    width:19em;
+    height: 3em;
+    margin: 0;
+}
+
+.oddGrid{
+    background-color: #C4C4C4;
+}
+
+.evenGrid{
+    background-color: rgb(236, 236, 236);
+}
+
+.rowLabel{
+    width: 350px;
+}
+
+.compareImg{
+    width: 350px;
+    height: 350px;
+    margin: 0;
+}
+
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          Review Block 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+#reviewBlock{
+
+}
+#reviewBlockHeader{
+    text-align: center;
+}
+
+#reviewBlockTop{
+    border: 2px solid rgb(66, 66, 66);
+    padding: 5px;
+}
+
+/*================================
+      Review Score/Breakdown
+================================*/
+#reviewScore{
+    background-color: #393633;
+    color: #fa993ffb;
+    height: 15em;
+    width: 20em;
+    display: inline-block;
+    vertical-align:top;
+}
+
+#avgStars{
+    display: inline-block; 
+    font-size: 2em;
+    margin: 0; 
+}
+#numReviews{
+    display:inline-block;
+    color: white;
+}
+
+/*Code for stars comes from here: https://css-tricks.com/five-methods-for-five-star-ratings/ */
+.stars {
+    display: inline-block;
+
+  --star-size: 40px;
+  --star-color: #fff;
+  --star-background: #fc0;
+
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times;
+  line-height: 1;
+}
+.stars::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.smallStar{
+    --star-size: 20px;
+    font-size: var(--star-size);
+}
+  
+
+/*================================
+            Review Form
+================================*/
+#reviewForm{
+    height: 15em;
+    width: 55em;
+    text-align: left;
+    display: inline-block;
+    vertical-align:top;
+}
+
+#reviewText{
+    display: block;
+    width: 48em;
+    height: 9em;
+    border-radius: 5px;
+    padding-top: 0;
+    padding-left: 0;
+    margin: 20px 0 0 5px;
+
+    font-size: 1.3em;
+}
+
+#reviewSubmit{
+    display: block;
+    width: 8em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: #fcb455c5;
+    margin: 5px;
+}

@@ -1,0 +1,199 @@
+.mainPageSection{
+    min-height: 650px;
+    background-color: white;
+    background-size: cover; 
+}
+
+
+/*================================
+          First Section
+================================*/
+
+#landingPage{
+    background-image: url("../img/backgrounds/landingBackground.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    text-align: center;
+    padding: 30px;     
+}
+.center img {        
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+#slogan{
+    display:block;
+    font-size: 3.8em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+#missionStatement{
+    display: block;
+    font-size: 1.6em;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-top: -25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+
+/*================================
+          Products
+================================*/
+#productDisplay{ /*Resource on Grid Layout: https://www.w3schools.com/css/css_grid.asp */
+    text-align: center; 
+    display: grid;
+
+    grid-template-areas:
+        'header header header'
+        'box bucket crate'
+        'boxTitle bucketTitle crateTitle';
+
+    padding: 10px;
+    grid-gap: 10px;
+    height: 500px;
+}
+
+#productHeader{
+    font-size: 3em;
+}
+.productIcon{
+    height: fit-content;
+    background-color: rgb(235, 235, 235);
+    width: 480px;
+    height: 350px;
+}
+
+
+
+.productPng{
+    width: 375px;
+    height: 350px;
+}
+
+.productIcon:hover{
+    width: 530px;
+    /* This is 52px total. 1/2 of that is for top and the other half is for bottom. */
+    height: 402px;
+    /* Below we are not using -26px for margin-top because .box has 6px border and 10px margin. */
+    /* That 16px is then divide by 2 since it's for both top and bottom, or 8px per side. */
+    /* Having said that, 26px - 8px is 18px. We need negative value to position it correctly. */
+    margin-top: -18px;
+   -moz-box-shadow:    0 0 25px #FF7D05;;
+   -webkit-box-shadow: 0 0 25px #FF7D05;;
+   box-shadow:         0 0 25px #FF7D05;;    
+  } 
+
+.productTitle{
+    margin-top: -25px;
+    font-size: 2em;
+    background-color: rgb(235, 235, 235);
+    height:fit-content;
+}
+
+
+/*================================
+          Discover
+================================*/
+#discover{
+    background-image: url("../img/backgrounds/beanBackground.jpg");
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+
+#discoverButton{
+    display: table-cell;
+    vertical-align: middle;
+    margin: 350px 0 0 0;
+    font-size: 4em;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+/*================================
+        Navigation Section
+================================*/
+#navigationSection{
+    text-align: center; 
+    display: grid;
+
+    grid-template-areas:
+        'header header header'
+        'img1 about img2'
+        'contact img3 leaveReview';
+
+    padding: 50px;
+    justify-content: center;
+    grid-template-columns: 0fr 0fr 0fr;
+    grid-template-rows: auto auto;
+    
+}
+
+.navHeader{
+    padding: 30px;
+}
+.navImg{
+    width: 20em;
+    height: 20em;
+    background-size: cover;
+}
+
+.navText{
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.navLink{
+    color: black;
+}
+
+
+/*================================
+          Reviews
+================================*/
+#reviews{
+    background-image: url("../img/backgrounds/reviewBackground.jpg");
+    text-align:right;
+    padding: 100px;
+}
+
+.reviewSectionText{
+    color: white;
+    margin-right: 12%;
+    font-size: 4.3em;
+
+}
+
+#reviewQuote{
+    margin-top: -75px;
+    margin-right:12%; /*this isn't good, find a work around (Maybe try a grid?)*/
+    width: 100px;
+}
+
+#reviewMessage{
+    text-align:left;
+    float:right;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-top: -25px;
+    margin-right: 12%;
+    width: 10em;
+}
+
+/*================================
+            SLIDE SHOW
+================================*/
+#misc{
+    background-color: white;
+    min-height: 100px;
+}
+
+

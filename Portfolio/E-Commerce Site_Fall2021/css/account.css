@@ -1,0 +1,16 @@
+#userAccountPage{
+    font-size: 20px;
+    width:1000px;
+    height: 700px;
+    margin: 5px 60px 5px 100px;
+}
+.userAccountImg{
+    display:inline-block;
+    margin: 2vw 3vw 2vw 3vw;
+    border-radius: .5vw;
+
+}
+#userAccountImg{
+    width: 80vw;
+    height:15vw;
+}

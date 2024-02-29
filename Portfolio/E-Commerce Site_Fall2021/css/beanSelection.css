@@ -1,0 +1,86 @@
+/* CODE FROM: https://www.w3schools.com/howto/howto_js_popup_form.asp */
+
+body{
+    box-sizing: border-box
+}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: white;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 1000px;
+    height: 600px;
+
+    text-align: center; 
+    display: grid;
+
+    grid-template-areas:
+        'bean1 bean2 bean3 bean4'
+        'bean5 bean6 bean7 bean8'
+        'bean9 bean10 bean11 bean12';
+
+    padding: 10px;
+    grid-gap: 10px;
+
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.form-container input[type=checkbox]{
+  border: none;
+  background: #f1f1f1;
+  display: none;
+}
+
+
+.beanSelectionImg{
+    width:100px;
+    height: 100px;
+}
+
+.beanName{
+    font-size: 0.8em; 
+}
+:checked+label .beanName  {
+    font-weight: bold;
+}
+
+:checked+label img{
+    transform: scale(1.1);
+    border: 5px solid rgb(204, 204, 204);
+    z-index: -1;
+}
+
+
+/* Set a style for the submit/login button */
+.btn {
+    background-color: #393633;
+    color: #fa993ffb;
+    font-weight: bold;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 15em;
+    margin-bottom:10px;
+}
+
+/* Add a red background color to the cancel button */
+.cancel {
+  background-color: red;
+  color: white;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

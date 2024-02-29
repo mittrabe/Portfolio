@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Bean Crate - Cart</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/cart.css">
+        <!--the below stylesheet is stolen from w3schools and is what is being used to to grab the caret symbol for the more dropdown-->
+
+        <script> 
+            
+            function displayProfileContent(){
+                document.getElementById("profile-content").style.display= "block";
+            }
+        
+        //CODE FROM: https://codepen.io/marizawi/pen/YgaaMp
+        //I'd was unable to figure out how to get the displayProfileContent feature to be built in directly into this eventListener
+        window.addEventListener('mouseup',function(event){
+            var profContent = document.getElementById('profile-content');
+            var profIcon = document.getElementById("profileIcon");
+            //event.target.parentNode is what prevents the dropdown from closing when clicking on items in the dropdown list. not sure if we want this or not
+            if(event.target != profContent && event.target.parentNode != profContent && event.target != profIcon){
+                profContent.style.display = 'none';
+            }
+        });
+       
+        </script>
+    </head>
+
+    <body>
+
+        <div id="logoContainer">
+            <img src="../img/beanCrateLogo.png" id="logo" alt="Bean Crate Logo">
+        </div>
+
+        <div id="banner">
+                <a id="branding" class="branding" href="index.html">Bean Crate</a> <!--always point this to the home page index page-->
+                <a id="login" class="bannerButton" href="#">Login</a>
+                <a id="signUp" class="bannerButton" href="#">Sign Up</a>
+            
+                <!--The code for the profileDiv (the user profile circle in the top right) is incomplete and currently nonfunctional-->
+                <div id="profileDiv" class="profileDiv"> 
+                    <button id = "profileIcon" class="profileIcon" onclick="displayProfileContent()"></button>
+            
+                    <div id="profile-content" class="profile-content">
+                            <a href="#">Account</a>
+                            <a href="#">Subscriptions</a>
+                            <a href="#">Order History</a>
+                            <a href="#">Help/Support</a>
+                            <a href="#">Sign Out</a>
+                        </div>
+                </div>
+        </div>
+       
+        <div id="navbar">
+            <a id="productsNav" class="navBarItem" href="#">Products</a>
+            <a id="beanGalleryNav" class ="navBarItem" href="#">Bean Gallery</a>
+
+            <div class="dropdown"> <!--Dropdown list code taken from: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+                <button class="dropbtn">More...</button>
+                <div class="dropdown-content">
+                    <a id="supportLink" href="#">Support</a>
+                    <a id="contactLink" href="#">Contact</a>
+                    <a id="aboutLink" href="#">About</a>
+                </div>
+            </div>
+
+
+
+            <a id="cartNav" class ="navBarItem" href='#'>Cart</a> <!--Maybe look into displaying the number of items in the cart here-->
+            <a id="accountNav" class="navBarItem" href='#'>Account</a>
+            
+        </div>
+
+        
+
+        <div id="pageBody">
+            <div id="checkoutBlock" class="pageBlock">
+                <h1 id="checkoutHeader" class="pageBlockHeader">Order Summary</h1>
+                <div id="checkoutSubBlock">
+                    <div id="orderInfo">
+                        <h3 id="cartTotal" class="summaryElement">Original Price: $$$</h3>
+                        <h3 id="shippingCost" class="summaryElement">Shipping: $$$</h3>
+                        <hr style="width:14em; margin-left: 5px;">
+                        <h3 id="finalTotal">Final Total: $$$</h3>
+                    </div>
+                    <div id="checkoutButtonDiv">
+                        <a id="checkoutButton" href="#">Checkout</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cartBlock" class="pageBlock">
+                <h1 id="cartHeader" class="pageBlockHeader">Your Cart</h1>
+                <div id="cartItemList">
+                    <div class="cartItem">
+                        <div class="cartItemBox">
+                            <img class="cartItemImg" src="../img/products/beanImg.png">
+                            <h4 class="cartItemName">product name</h4>
+                        </div>
+                        <div class="cartItemMisc">
+                            <h3 class="cartItemPrice">$$$</h3>
+                            <button class="removeFromCart">Remove</button>
+                        </div>
+                        <hr style="width: 100%;">
+                        <div class="beansIncluded">
+                            <h4 class="cartItemBeanHeader">Beans Selected:</h4>
+                            <p class="cartItemBeanList">bean, bean, bean, bean, bean, bean, bean, bean, etc.</p>
+                        </div>
+                    </div>
+                    
+            
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

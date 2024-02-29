@@ -1,0 +1,158 @@
+.pageBlock{
+    display: block;
+    min-height:600px;
+    width: auto;
+    min-width: 62.2em;
+    white-space: nowrap;
+    padding: 30px;
+    text-align: center;
+}
+
+.pageBlockHeader{
+    display: block;
+    font-size: 2.5em;
+    background-color: #393633;
+    color: #fa993ffb;
+    width: 15em;
+}
+
+#confirmationMessage{
+    margin-top: -3em;
+    margin-left: 5em;
+}
+
+/*==========================
+        CHECKOUT BLOCK
+==========================*/
+#checkoutBlock{
+    min-height: 12em;
+}
+
+#checkoutSubBlock{
+    text-align: justify;
+    background-color: white;
+    width: fit-content;
+    height: 12em;
+    padding: 0.5px 15px 0 15px;
+    margin-left: 1em;
+    margin-bottom: -1.5em;
+    border-radius: 5px;
+}
+
+#orderInfo{
+    display: inline-block;
+    width: 15em;
+    margin-top: 1em;
+    border: 1px solid gray;
+}
+
+.summaryElement{
+    display: block;
+    margin-left: 5px;
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+
+#finalTotal{
+    display: block;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 1.3em;
+}
+
+#checkoutButtonDiv{
+    display: inline-block;
+    width: 10em;
+    height: 100%;
+    vertical-align: top;
+    text-align: center;
+}
+
+#checkoutButton{
+    display: block;
+    width: 5em;
+    margin-top: 50%;
+    background-color: #393633;
+    color: #fa993ffb;
+    text-decoration: none;
+
+    font-size: 2em;
+}
+
+/*==========================
+        CART BLOCK
+==========================*/
+#cartHeader{
+    margin-top: -0.5em;
+}
+
+#cartItemList{
+    text-align: left;
+    display: grid;
+    height: fit-content;
+    min-height: 30em;
+    gap: 3em;
+    width: 60em;
+    background-color: white;
+    padding: 2em;
+}
+
+.cartItem{
+    background-color: rgb(204, 204, 204);
+    height: fit-content;
+    width: 56em;
+    padding: 0.5em;
+    margin: -1em;
+}
+
+.cartItemBox{
+    display: inline-block;
+    width: fit-content;
+}
+.cartItemImg{
+    display: inline-block;
+    height: 7em;
+    width: 7em;
+    background-color: white;
+}
+.cartItemName{
+    display: inline-block;
+    font-size: 1.5em;
+    vertical-align: top;
+}
+
+.beansIncluded{
+    width: fit-content;
+    display: block;
+}
+
+.cartItemMisc{
+
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+}
+
+.cartItemPrice{
+    display: inline-block; 
+    margin-right: 5px;
+    font-size: 1.6em;
+    margin-top: 3em;
+    vertical-align: middle;
+}
+.removeFromCart{
+    display: inline-block; 
+    font-size: 1em;
+    margin-top: 3em;
+    vertical-align: middle;
+}
+
+.cartItemBeanHeader{
+    display: inline-block;
+    font-size:1.2em;
+
+}
+.cartItemBeanList{
+    display: inline-block;
+}

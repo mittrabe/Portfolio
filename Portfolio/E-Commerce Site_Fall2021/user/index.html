@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Bean Crate - User Profile</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/profile.css">
+
+        <script> 
+            
+            function displayProfileContent(){
+                document.getElementById("profile-content").style.display= "block";
+            }
+        
+        //CODE FROM: https://codepen.io/marizawi/pen/YgaaMp
+        //I'd was unable to figure out how to get the displayProfileContent feature to be built in directly into this eventListener
+        window.addEventListener('mouseup',function(event){
+            var profContent = document.getElementById('profile-content');
+            var profIcon = document.getElementById("profileIcon");
+            //event.target.parentNode is what prevents the dropdown from closing when clicking on items in the dropdown list. not sure if we want this or not
+            if(event.target != profContent && event.target.parentNode != profContent && event.target != profIcon){
+                profContent.style.display = 'none';
+            }
+        });
+       
+        </script>
+    </head>
+
+    <body>
+        <div id="banner">
+            <a id="branding" class="branding" href="index.php">Bean Crate</a> <!--always point this to the home page index page-->
+        
+            <a id="login" class="bannerButton" href="#">Login</a>
+            <a id="signUp" class="bannerButton" href="#">Sign Up</a>
+        
+            <!--The code for the profileDiv (the user profile circle in the top right) is incomplete and currently nonfunctional-->
+            <div id="profileDiv" class="profileDiv" style="float:right;"> 
+                <button id = "profileIcon" class="profileIcon" onclick="displayProfileContent()"></button>
+        
+                <div id="profile-content" class="profile-content">
+                        <a href="#">Account</a>
+                        <a href="#">Subscriptions</a>
+                        <a href="#">Order History</a>
+                        <a href="#">Help/Support</a>
+                        <a href="#">Sign Out</a>
+                    </div>
+            </div>
+        </div>
+
+        <div id="logoContainer">
+            <img src="../img/beanCrateLogo.png" id="logo" alt="Bean Crate Logo">
+        </div>
+       
+        <div id="navbar">
+            <a id="productsNav" class="navBarItem" href="#">Products</a>
+            <a id="beanGalleryNav" class ="navBarItem" href="#">Bean Gallery</a>
+
+            <div class="dropdown"> <!--Dropdown list code taken from: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+                <button class="dropbtn">More...<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <form id="searchForm" name="searchForm">
+                <input id="searchBar" type="text" placeholder="Search.." name="searchBar">
+                <button id="searchButton" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <a id="cartNav" class ="navBarItem" href='#'>Cart</a> <!--Maybe look into displaying the number of items in the cart here-->
+            <a id="accountNav" class="navBarItem" href='#'>Account</a>
+            
+        </div>
+
+
+        <div id="pageBody">
+            <!--Account Information, Purchase History, Your Subscription(s)-->
+            <div id="profileNavItems">
+                <h2 id="profileNavHeader">Your Account</h2>
+                <a id="profileAccountNav" class="profileButton" href='#'>Account Information</a>
+                <a id="profilePurchaseHistoryNav" class="profileButton" href='#'>Purchase History</a>
+                <a id="profileSubscriptionNav" class="profileButton" href='#'>Your Subscription(s)</a> 
+            </div>  
+        </div>
+
+    </body>
+</html>

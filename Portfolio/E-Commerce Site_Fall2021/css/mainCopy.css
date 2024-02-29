@@ -1,0 +1,240 @@
+body{
+    background-color: #C4C4C4; /* #C4C4C4 */
+    margin: 0;
+    padding: 0;
+    
+    overflow-x: auto;
+    overflow-y: auto;
+    
+  }
+  
+  /*=====================
+    Banner Elements
+  ======================*/
+  #logoContainer{
+    width: 12em;
+    height:12em;
+    position: absolute;
+    z-index: 100;
+    float: left;
+  }
+  #logo{
+    width: 12em;
+    height: auto;
+  }
+  
+  /* banner refers to the top dark gray strip where the "Bean Crate" is */
+  #banner{
+    background-color: #393633;
+    height: 4em;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 99;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  /* branding refers to the large "Bean Crate" at the top */
+  #branding{
+    display: inline-block;
+    color: #FF7D05;
+    font-size: 3em;
+    text-decoration: none;
+  }
+  
+  /* the bannerButton class refers to "buttons" located in the banner. This is specifically the login/sign up buttons */
+  #login{
+    display: inline-block;
+    color: white;
+    font-size: 1.3em;
+    margin-top: 1em;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    text-decoration: none;
+  }
+  #signUp{
+    display: inline-block;
+    color: white;
+    font-size: 1.3em;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  /* this is the current code for the user profile picture circle in the top right. 
+  It was supposed to be a drop down list but I was struggling to get it to work so it is currently nonfunctional */
+  
+  .profileIcon{
+    background-color: none;
+    margin: .3em;
+  
+    z-index: 100;
+  
+    width: 3.7em;
+    height: 3.7em;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+  } 
+  .profileIcon{
+    background-image: url("../img/userProfileIcon.png")
+  }
+  
+  .profileDiv {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .profile-content {
+  display: none;
+  position: absolute;
+  top: 3.8em;
+  right: 0;
+  background-color: #393633;
+  min-width: 12em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+  }
+  
+  .profile-content a {
+  color: white;
+  font-size:1.2em;
+  padding: 1em 1em;
+  text-decoration: none;
+  display: block;
+  }
+  
+  .profile-content a:hover {background-color: #fa993ffb;}
+  /*.profileDiv:hover .profile-content {display: block;} */
+  
+  /*===========================
+        NAVBAR ELEMENTS
+  ============================*/
+  
+  /* the navbar is the lighter grey strip underneath the banner that contains the search bar and various links */
+  #navbar{
+    display: block;
+    background-color: #848484;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    height: 2.7em;
+    width: 100%;
+    z-index: 98;
+  
+    
+  }
+  
+  /* the generic class for the "buttons" within the navbar */
+  a.navBarItem{
+    float: left;
+    font-size: 1.1em;
+    width: 10em;
+    outline: none;
+    background-color: inherit;
+    padding: .6em 1em;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  
+  }
+  
+  /*makes the navBarButtons orange while hovering over them */
+  .navBarItem:hover {
+  background-color: #fa993ffb;
+  }
+  #productsNav{
+    margin: 0 0 0 10em; /*pushes all the elements out from the left side */
+  }
+  
+  #cartNav{
+    margin: 0 0 0 22em;
+    width: 8em;
+  }
+  #accountNav{
+    margin: 0;
+    width: 8em;
+  }
+  
+  
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        DROP DOWN CODE
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*FROM: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp */
+  
+  /* the drop down this code is referring to is specifically the drop down relating to the "More..." button */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    color: black;
+    padding: .6em 1em;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+  }
+  
+  /* Add an orange background color to navbar links on hover */
+  .dropdown:hover .dropbtn {
+    background-color: #fa993ffb;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 12em; /*min-width == the width of the dropdown box itself. We can adjust this as needed */
+    z-index: 100;
+    /* not sure what the next lines does, might be worth it to see if it can be removed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    font-size:1.1em;
+    padding: 1em 1em;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #fcb455c5;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  #pageBody{
+    position: relative;
+      top: 0;
+      width: 100%;
+      min-width: fit-content;
+      height: 100%;
+      z-index: 1;
+      padding: 0;
+      background-color: #C4C4C4;
+      overflow-y: auto;
+      overflow-x: auto;
+      height: fit-content;
+  }
+  
