@@ -1,2 +1,2 @@
 # DndWiki
-dnd wiki
+This wiki was a passion project developed by myself and 2 others in Fall of 2023 that aimed to develop a knowledge base that housed articles created by a user for a DND campaign that could be shared with the players in that campaign. My main focus/contribution was on the article creation and published article pages. While the project fell through after a couple months, I was able to create a relatively robust rich text editor.
